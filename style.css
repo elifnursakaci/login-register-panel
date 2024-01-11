@@ -1,0 +1,106 @@
+:root{
+    --bg-color-primary: rgba(36, 139, 180, 0.3);
+    --bg-color-primary-dark: rgba(32, 95, 119, 0.6);
+
+    --color-primary: rgba(251, 251, 251, 0.868);
+    --color-primary-dark: rgba(4, 31, 57, 0.8);
+
+    --border-radius: 6px;
+    --color-error: red;
+    --reguler-font-size:20px;
+    
+    --box-shadow: 0 0 20px rgb(60, 1, 73);
+    --input-paddin:0.7rem;
+    --input-regular-border:2px solid rgb(145, 128, 151);
+    
+
+
+}
+body{
+    background: linear-gradient(to right , var(--bg-color-primary) , var(--bg-color-primary-dark)), url(img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100hv;
+    margin: 0;
+    font-size: var(--reguler-font-size);
+
+    position: relative;   
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.767);
+    width: 400px;
+    max-height: 600px;
+    max-width: 400px;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    left:50%;
+    top:5rem;
+    transform: translate(-50%);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+}
+.form_title{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+}
+.form_message{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+
+}
+.form_message_error{
+    color: var(--color-error);
+}
+.form_input_group{
+    margin-bottom: 1rem;
+}
+.form_input{
+    width: 100%;
+    padding: var(--input-paddin);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline:none;
+    border: var(--input-regular-border); 
+    background-color:rgb(219, 217, 219) ;
+    transition: background .3s, border-color .3s;
+}
+.form_input:focus{
+    border-color: rgb(190, 192, 194);
+    background-color: white;
+}
+.from_button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: var(--bg-color-primary);
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+.from_button:hover{
+    background-color: var(--bg-color-primary-dark);
+
+}
+.from_button:active{
+    transform: scale(0.98);
+}
+.form_text{
+   text-align: center;
+   
+
+}
+.form_link{
+    color: rgb(187, 63, 63);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0;
+}
+.form_link:hover{
+    color: rgb(184, 34, 34);
+    font-weight: bold;
+    
+}
